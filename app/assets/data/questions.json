@@ -1,0 +1,290 @@
+[
+  {
+    "question": "Bicycle ridership in a city is studied. Examination of several years of data revealed that 30% of the people who regularly ride bicycles in a given year do not regularly ride bicycles in the subsequent year. Additionally, 2% of the people who do not regularly ride bicycles in that year begin to ride bicycles regularly in the subsequent year. If 5,000 people ride bicycles and 100,000 people do not ride bicycles in a given year, then the following program calculates the number of cyclists in the subsequent year (cycling) and that of people who do not ride bicycles in the subsequent year (noncycling):",
+    "image1": "/2024A-FE-B-1.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "The function coupon receives the argument prod_id (a positive integer value) of product ID, and pur_prod (a positive integer value) of the number of purchased products by a customer. The function returns the number of coupons. For every purchase of three products of the product ID of which the last digit is three, the customer receives one coupon. Otherwise, they receive no coupon.",
+    "image1": "/2024A-FE-B-2.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)", 
+        "g)", 
+        "h)",
+        "i"
+    ],
+    "correctAnswer": 6
+  },
+  {
+    "question": "The program determines the second-largest element of an integer-type array and outputs its value. For instance, the second largest element of the array {2, 6, 9, 1, 7, 5} is 7. Here, we assume that the array has two or more elements and that no duplicate elements are present in the array.",
+    "image1": "/2024A-FE-B-3.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)", 
+        "g)", 
+        "h)"
+    ],
+    "correctAnswer": 5
+  },
+  {
+    "question": "The procedure primeFactors outputs the prime factors for the input values as its argument. The first few prime numbers are 2, 3, 5, 7, 11, and 13. For instance, if the input integer is 12, the output is “2x2x3”. If the input integer is 78, the output is “2x3x13”. The input integer must be greater than 1.",
+    "image1": "/2024A-FE-B-4.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "",
+    "image1": "/2024A-FE-B-5.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "",
+    "image1": "/2024A-FE-B-6-1.png",
+    "image2": "/2024A-FE-B-6-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)", 
+        "g)", 
+        "h)"
+    ],
+    "correctAnswer": 7
+  },
+  {
+    "question": "Given two strings, str1 and str2, the task is to determine the length of the longest common subsequence (LCS), that is, the length of the longest subsequence present in both strings. For instance, if str1 is “ABXDZ” and str2 is “ABCD”, the LCS between str1 and str2 will be “ABD” and the length of the LCS will be 3. The function lcs(string: str1, string: str2, integer: m, integer: n) takes two strings str1 and str2 and two integers m and n as arguments. str1 and str2 are the strings on which the length of the LCS is calculated. m and n are indexes addressing the target characters in str1 and str2, respectively. On the first call, m and n represent the lengths of str1 and str2, respectively. The function returns an integer containing the value of the length of the LCS of str1 and str2. For instance, the function may be called as lcs('ABXDZ', 'ABCD', 5, 4). Another function max(integer: a, integer: b) is also used. The function takes two integers a and b as arguments. It compares these two integers and returns the integer value of whichever is the maximum between a and b.",
+    "image1": "/2024A-FE-B-7-1.png",
+    "image2": "/2024A-FE-B-7-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "This program performs operations on a priority queue. A priority queue is a queue where the handled elements have a priority assigned to them, and the elements are extracted with the order of the highest priority first. The class PrioQueue represents a priority queue. The Figure shows an explanation of the class PrioQueue. Here, the priority is the integer value 1, 2, or 3, and the smaller the value the higher the priority. When the procedure prioSched is called, the order of the output is ___",
+    "image1": "/2024A-FE-B-8-1.png",
+    "image2": "/2024A-FE-B-8-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "The procedure traverse traces through a vertex of the graph shown in the Figure, and outputs all vertex numbers in the graph. The vertex number of the graph is specified with the argument k. The global variable n indicates the number of vertices in the graph. The global array graph represents the graph in the figure. Each element graph[i][j] is equal to 1 if an edge exists between vertices i and j, and it is equal to 0 otherwise. The global array visited stores boolean values, where visited[i] indicates whether vertex i of the graph has been visited during the procedure. When the procedure is called as traverse(1), the output is in the order ___",
+    "image1": "/2024A-FE-B-9-1.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "The procedure addNode adds a node to a singly-linked list at the position specified by the argument pos. The argument pos is a positive integer that is equal to or less than the (number of nodes + 1) in the list. The position at the top of the list is 1. The class ListNode represents a node in a singly-linked list. The table summarizes an explanation of the member variables of the class ListNode. ListNode-type variables store references to instances of the class ListNode. A reference to the first node in the list is pre-stored in the global variable listHead.",
+    "image1": "/2024A-FE-B-10-1.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "The procedure sort sorts an integer array containing certain number (≥ 2) of elements in ascending order",
+    "image1": "/2024A-FE-B-11.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)"
+    ],
+    "correctAnswer": 5
+  },
+  {
+    "question": "",
+    "image1": "/2024A-FE-B-12-1.png",
+    "image2": "/2024A-FE-B-12-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)",
+        "g)",
+        "h)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Hashing in data structures is a fundamental concept used for efficient data retrieval and storage mechanisms. A program storing a key-data pairs in an array by transforming keys into array indexes using a hash function exists. A collision occurs when two keys hash to the same index in the array representing the hash table. A common method handling collisions, the probing mechanism (checking for an available element), is used in the function. The procedure insertData inserts a pair of key and data, if the element in the array is {undefined}. Assumptions are made that no data with the same key is stored, and that at least one element in the array hashTable is {undefined} when the procedure insertData is called. The function hashFunction takes a key as input and returns a hash value",
+    "image1": "/2024A-FE-B-13-1.png",
+    "image2": "/2024A-FE-B-13-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)",
+        "g)",
+        "h)"
+    ],
+    "correctAnswer": 4
+  },
+  {
+    "question": "The function summarize receives the array sortedData sorted in ascending order and returns five values that characterize the array. The array sortedData must have at least one element. The summarize calls the findRank with two arguments, sortedData and q. When the function summarize is called as summarize({0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1}), the return value is ___",
+    "image1": "/2024A-FE-B-14.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)",
+        "g)",
+        "h)"
+    ],
+    "correctAnswer": 4
+  },
+  {
+    "question": "Suppose the weather in a city, from day to day, follows a Markov process. This implies the next day's weather depends only on today's weather and not on those of the previous days. If it rains today in the city, a probability 0.3 exists that it will rain again tomorrow. Similarly, the probability that tomorrow's weather will be sunny is 0.4 and that it will be cloudy is 0.3. If today's weather is sunny, the next day will be rainy, sunny, or cloudy with probabilities 0.2, 0.7, and 0.1, respectively. Additionally, if today's weather is cloudy, the next day will be rainy, sunny, or cloudy with probabilities 0.25, 0.5, and 0.25, respectively. Let us say that the weather is in state 1 if it is rainy, in state 2 if it is sunny, and in state 3 if it is cloudy. Then, the above is a three-state Markov chain whose transition probabilities are given by the following:",
+    "image1": "/2024A-FE-B-15-1.png",
+    "image2": "/2024A-FE-B-15-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Function hammingDistance receives two strings as argument and returns Hamming distance as the return value. Hamming distance is a metric used to measure the difference between two strings of equal length. It counts the number of positions at which the corresponding characters are different. For instance, the return value is 2 when the function hammingDistance('101010', '111000') is called, because positions 2 and 5 have different characters. It can also be extended to strings of different lengths by considering the unmatched characters as differences. For instance, the return value is 5 when the function hammingDistance('101010', '111000111') is called, because of two differences in first six characters and addition of three extra unmatched characters.",
+    "image1": "/2024A-FE-B-16-1.png",
+    "image2": "/2024A-FE-B-16-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)",
+        "g)",
+        "h)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "",
+    "image1": "/2024A-FE-B-17-1.png",
+    "image2": "/2024A-FE-B-17-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)", 
+        "f)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Company B runs several web services. Mr. Y is a software engineer in the company. He was directed to develop a feature that prevents web service users from setting weak passwords. Mr. Y investigated and found that “Password Entropy” is the important factor for the password strength. Password entropy measures the strength of a password based on the difficulty of cracking the password through guessing or a brute-force attack. The entropy of a password is typically based on the type of characters used—lowercase letters, uppercase letters, numerical digits, or special characters—and the length of the password or total number of characters.",
+    "image1": "/2024A-FE-B-18-1.png",
+    "image2": "/2024A-FE-B-18-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "",
+    "image1": "/2024A-FE-B-19.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)",
+        "f)",
+        "g)",
+        "h)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Company Y, a trading company, is developing an e-commerce web application for selling products to customers directly. The web server hosting the web application is installed on- premise and the web application is to be developed in-house. The communications to the web server are allowed only with HTTPS and the server certificate is already signed by the third party and installed on the web server. Company Y has an IT department comprising three teams—Developer, Security, and Tech Support—and the requirements for the web application are specified as follows (excerpt):",
+    "image1": "/2024A-FE-B-20.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)",
+        "f)"
+    ],
+    "correctAnswer": 2
+  }
+]
