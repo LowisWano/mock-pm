@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start -p 45182",
+    "start": "next start -p 45183",
     "lint": "next lint",
     "deploy": "npx pm2 start npm --name 'mock' -- start",
     "status": "npx pm2 status",
