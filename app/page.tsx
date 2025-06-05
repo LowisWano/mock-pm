@@ -25,7 +25,7 @@ export default function Home() {
         {/* Header */}
         <div className="text-center mb-8 pt-8">
           <h1 className="text-4xl font-bold text-slate-900 mb-2">PhilNITS FE Certification PM Mock Exam</h1>
-          <p className="text-slate-600 text-lg">Test your knowledge and prepare for the PhilNITS Certification Exam!</p>
+          <p className="text-slate-600 text-lg">Test your knowledge and prepare for the PhilNITS Certification Exam</p>
         </div>
 
         {/* Main Content */}
