@@ -13,7 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Step 1: Kill PM2 and delete old files
       - name: Clean up remote server
         uses: appleboy/ssh-action@v1.2.0
         with:
@@ -22,10 +21,8 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            pm2 kill || true
-            rm -rf ~/mock.dcism.org/*
+            find ~/mock.dcism.org -mindepth 1 -exec rm -rf {} +
 
-      # Step 2: Upload new files
       - name: Upload files to server
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -38,7 +35,6 @@ jobs:
           target: "~/mock.dcism.org/"
           overwrite: true
 
-      # Step 3: Create .htaccess and deploy
       - name: Setup and build on server
         uses: appleboy/ssh-action@v1.2.0
         with:
