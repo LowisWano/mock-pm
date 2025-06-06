@@ -15,6 +15,7 @@ const allQuestions: Question[] = [
 ]
 
 
+
 export function getRandomQuestions(n: number = 20): Question[] {
   const shuffled = [...allQuestions].sort(() => Math.random() - 0.5)
   return shuffled.slice(0, n)
