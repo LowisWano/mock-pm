@@ -1,0 +1,14 @@
+[
+  {
+    "question": "One day, a store staff found that a customer had left his/her PC in the store. On the PC, there was a name sticker. Unfortunately, the characters were blurred and the staff could not clearly read the owner's name. Finally, the staff identified that:",
+    "image1": "/2023S-FE-B-3-S2.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)"
+    ],
+    "correctAnswer": 1
+  }
+]

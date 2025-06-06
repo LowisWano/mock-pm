@@ -8,15 +8,8 @@ import { Label } from "@/app/components/ui/label"
 import { Clock, ChevronLeft, ChevronRight, CheckCircle, XCircle, RotateCcw, Plus } from "lucide-react"
 import { Alert, AlertDescription } from "@/app/components/ui/alert"
 import Image from "next/image"
-import questionData from "@/app/assets/data/questions.json"
-
-interface Question {
-  question: string;
-  image1?: string;
-  image2?: string;
-  options: string[];
-  correctAnswer: number;
-}
+import { quizData, getRandomQuestions } from "@/app/assets/data"
+import { Question } from "@/app/assets/data"
 
 interface QuizResults {
   score: number
@@ -26,8 +19,6 @@ interface QuizResults {
   passed: boolean
 }
 
-const questions: Question[] = questionData as Question[];
-
 export default function QuizInterface() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [answers, setAnswers] = useState<{ [key: number]: number }>({})
@@ -36,6 +27,7 @@ export default function QuizInterface() {
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false)
   const [quizCompleted, setQuizCompleted] = useState(false)
   const [results, setResults] = useState<QuizResults | null>(null)
+  const [questions, setQuestions] = useState<Question[]>(quizData)
 
   // Timer effect
   useEffect(() => {
@@ -43,7 +35,6 @@ export default function QuizInterface() {
       const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000)
       return () => clearTimeout(timer)
     } else if (!quizCompleted && timeLeft === 0) {
-      // Auto-submit when time runs out
       handleSubmit()
     }
   }, [timeLeft, quizCompleted])
@@ -108,10 +99,10 @@ export default function QuizInterface() {
     setQuizCompleted(false)
     setResults(null)
     setShowSubmitConfirm(false)
+    setQuestions(getRandomQuestions())
   }
 
   const handleNewQuiz = () => {
-    // In a real app, this would load different questions
     handleRetakeQuiz()
   }
 

@@ -286,5 +286,31 @@
         "f)"
     ],
     "correctAnswer": 2
+  },
+  {
+    "question": "A school determines the letter grade that a student will receive based on the score, which is an integer value between 0 and 100, as follows:",
+    "image1": "/2024S-FE-B-1.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)",
+        "f)"
+    ],
+    "correctAnswer": 4
+  },
+  {
+    "question": "A bus company operates buses between two cities. The standard ticket price is 20 US dollars and the discount ticket price for passenger aged 10 and under or aged 60 and over is 10 US dollars. Additionally, registered members of all ages always get the ticket at the discount price. The function ticketPrice receives the arguments age (a non-negative integer value) and isMember (a boolean indicating that the passenger is a member if the value is true), which returns the value ret as the ticket price (in US dollars).",
+    "image1": "/2024S-FE-B-2.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)"
+    ],
+    "correctAnswer": 3
   }
 ]
