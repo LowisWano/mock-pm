@@ -13,38 +13,41 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Clean up remote server
-        uses: appleboy/ssh-action@v1.2.0
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
-          port: ${{ secrets.SSH_PORT }}
-          script: |
-            find ~/mock.dcism.org -mindepth 1 -exec rm -rf {} +
-
-      - name: Upload files to server
+      - name: Upload file to SSH
         uses: appleboy/scp-action@v0.1.7
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
-          port: ${{ secrets.SSH_PORT }}
+          host: ${{secrets.SSH_HOST}}
+          username: ${{secrets.SSH_USERNAME}}
+          password: ${{secrets.SSH_PASSWORD}}
+          port: ${{secrets.SSH_PORT}}
           source: "*"
-          exclude: "./node_modules, ./.git*, ./.github, /etc, /lib"
+          exclude: "./node_modules, ./.git, ./.github, /etc, /lib"
           target: "~/mock.dcism.org/"
           overwrite: true
 
-      - name: Setup and build on server
+      - name: Build and Restart PM2
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
-          port: ${{ secrets.SSH_PORT }}
+          host: ${{secrets.SSH_HOST}}
+          username: ${{secrets.SSH_USERNAME}}
+          password: ${{secrets.SSH_PASSWORD}}
+          port: ${{secrets.SSH_PORT}}
           script: |
             cd ~/mock.dcism.org
-            cat <<EOF > .htaccess
+            npm install
+            npm run build
+            npx pm2 delete mock || true
+            npx pm2 start npm --name 'mock' -- start
+
+      - name: Create .htaccess file
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{secrets.SSH_HOST}}
+          username: ${{secrets.SSH_USERNAME}}
+          password: ${{secrets.SSH_PASSWORD}}
+          port: ${{secrets.SSH_PORT}}
+          script: |
+            cat <<EOF > ~/mock.dcism.org/.htaccess
             DirectoryIndex disabled
 
             RewriteEngine on
@@ -54,7 +57,3 @@ jobs:
 
             RewriteRule (.*) http://127.0.0.1:8888%{REQUEST_URI} [P,L]
             EOF
-
-            npm install
-            npm run build
-            npx pm2 start npm --name 'mock' -- start
