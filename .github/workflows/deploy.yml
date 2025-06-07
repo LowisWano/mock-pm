@@ -13,6 +13,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Kill all PM2 processes
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            npx pm2 kill || true
+      
+      - name: Delete content in mock.dcism.org directory
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            find ~/mock.dcism.org -mindepth 1 -delete
+
       - name: Upload file to SSH
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -24,6 +44,25 @@ jobs:
           exclude: "./node_modules, ./.git, ./.github, /etc, /lib"
           target: "~/mock.dcism.org/"
           overwrite: true
+
+      - name: Write .htaccess file on server
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cat << 'EOF' | sed 's/^ *//' > ~/mock.dcism.org/.htaccess
+              DirectoryIndex disabled
+
+              RewriteEngine on
+
+              RewriteCond %{SERVER_PORT} 80
+              RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+              RewriteRule (.*) http://127.0.0.1:45183%{REQUEST_URI} [P,L]
+            EOF
 
       - name: Build and Restart PM2
         uses: appleboy/ssh-action@v1.2.0
