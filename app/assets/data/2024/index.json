@@ -312,5 +312,120 @@
         "d)"
     ],
     "correctAnswer": 3
+  },
+  {
+    "question": "The program outputs the even numbers between 1 and 100. Subsequently, it prints the sum of those even numbers. Note that division is performed for data type integer, that is, a ÷ b is the quotient of a divided by b.",
+    "image1": "/2024S-FE-B-3.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)",
+        "f)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "The function sumDigits receives a non-negative integer value num as argument, and returns the sum of the digits of num.",
+    "image1": "/2024S-FE-B-4.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)",
+        "f)",
+        "g)",
+        "h)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "The function division receives two integer values a and b and returns the quotient of a divided by b. The function modulus receives two integer values a and b and returns the remainder of a divided by b. The procedure convert receives the value of seconds as the input argument and outputs that value in the form of hours, minutes, and seconds. For example, when the procedure convert is called as convert(5450) the output is “1, 30, 50”. Here, suppose that the range of input values satisfy 0 ≤ input < 86400",
+    "image1": "/2024S-FE-B-5.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)",
+        "f)"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "The function count1 receives the bit8 type (8-bit type) argument byte, and returns the number of bits 1 in the argument. For example, when the function count1 is called as count1(11001011), the return value is 5. Here, operator & represents a bitwise logical product, operator | represents a bitwise logical sum; operator >> represents a logical shift to the right, and operator << represents a logical shift to the left. For example, v << n performs a logical shift of the value of v by n bits to the left.",
+    "image1": "/2024S-FE-B-6.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)",
+        "f)"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "The Fibonacci sequence is a sequence in which each number is equal to the sum of the two preceding numbers. In this question, the sequence starts with 0 and 1. The first 10 values in the sequence are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34. For example, the 8-th number 13 is the sum of the two preceding numbers 5 and 8. The function fibo takes an integer value n as the argument and returns the value at the n-th position. Here, n reflects the position of the number in the sequence, starting with 1 (one). When n is 9, the function returns 21.",
+    "image1": "/2024S-FE-B-7.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)",
+        "f)",
+        "g)",
+        "h)",
+        "i)"
+    ],
+    "correctAnswer": 8
+  },
+  {
+    "question": "The program implements a stack. The stack implementation only accepts positive integers. The function empty checks whether the stack is empty. The function full checks whether the stack is full. If the stack is not full, the function push pushes an element with a specified value onto the stack. If the stack is not empty, the function pop removes an element from the stack and returns its value. In the program, areas outside of the array must not be referenced.",
+    "image1": "/2024S-FE-B-8-1.png",
+    "image2": "/2024S-FE-B-8-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)", 
+        "e)",
+        "f)",
+        "g)",
+        "h)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "The procedure preorder traverses a binary tree and outputs the value of each node by following the sequence: root, left subtree, and right subtree using a stack (Last In, First Out). Each node of the binary tree is represented by the class Node. The table shows the description of the class Node. The Node-type variable holds a reference to an instance of the class Node. The argument root holds a reference to the root of the binary tree, which is an instance of the class Node. In the program, areas outside of the array must not be referenced.",
+    "image1": "/2024S-FE-B-9-1.png",
+    "image2": "/2024S-FE-B-9-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "The procedure Insert inserts an integer number given by the argument after the last element of the linear circular linked list. Each element of the linear circular linked list is represented by the class ListElement. The figure shows the description of the class ListElement. The ListElement-type variable holds a reference to an instance of the class ListElement. The global variable listHead holds a reference to the head element of the linear circular linked list. Remember that in the circular linked list the last element points to the listHead. Here, if the list is empty, listHead is set to undefined.",
+    "image1": "/2024S-FE-B-10-1.png",
+    "image2": "/2024S-FE-B-10-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)"
+    ],
+    "correctAnswer": 1
   }
 ]
