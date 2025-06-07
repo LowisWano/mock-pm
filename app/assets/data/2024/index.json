@@ -507,5 +507,79 @@
         "i)"
     ],
     "correctAnswer": 8
+  },
+  {
+    "question": "",
+    "image1": "/2024S-FE-B-16.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)",
+        "e)",
+        "f)",
+        "g)",
+        "h)",
+        "i)",
+        "j)"
+    ],
+    "correctAnswer": 7
+  },
+  {
+    "question": "An information systems company S has a guideline related to any issue for workers doing their daily job. The company has an information security team responsible for related issues and updates workers' knowledge on information security. One morning, a company worker who had just started his daily job and successfully signed into the company's enterprise system received the following email:",
+    "image1": "/2024S-FE-B-17.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)",
+        "e)",
+        "f)"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Company X is a small trading company. The company is about to provide a new e-commerce web site for customers to make purchases online. The company will also hosts its own email service for the employees to conduct business with partners and customers. Company X will utilize public key infrastructure (PKI) to provide security for both the web server and email service. PKI uses public key cryptography to manage the identity of servers or persons and is widely used on the Internet.",
+    "image1": "/2024S-FE-B-18-1.png",
+    "image2": "/2024S-FE-B-18-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)",
+        "e)",
+        "f)"
+    ],
+    "correctAnswer": 5
+  },
+  {
+    "question": "Company Y is an online retailer providing e-commerce web applications for customers to make purchases online and also allows customers to post product reviews. The web application was developed and maintained in-house. The properties of the e-commerce web application are shown in Figure 1",
+    "image1": "/2024S-FE-B-19-1.png",
+    "image2": "/2024S-FE-B-19-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)",
+        "e)",
+        "f)"
+    ],
+    "correctAnswer": 5
+  },
+  {
+    "question": "A zone is a group of interfaces that have similar functions or features. Zones establish the security borders of a network. A zone defines a boundary where traffic is subjected to policy restrictions when crossing into another region of a network. An inspection policy is applied to traffic moving between zones. Inter-zone policies offer considerable flexibility. Hence, different inspection policies can be applied to multiple host groups connected to the same router interface. Company Z, intends to apply a zone-based policy firewall in their datacenter. Thus, they develop the network topology shown in Figure 1",
+    "image1": "/2024S-FE-B-20-1.png",
+    "image2": "/2024S-FE-B-20-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)",
+        "e)",
+        "f)"
+    ],
+    "correctAnswer": 1
   }
 ]
