@@ -427,5 +427,85 @@
         "d)"
     ],
     "correctAnswer": 1
+  },
+  {
+    "question": "The program sorts the data in ascending order using the selection sort algorithm. The algorithm repeatedly selects the smallest element from the unsorted portion of the array and swaps it with the first element of the unsorted portion until the entire array is sorted.",
+    "image1": "/2024S-FE-B-11.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)",
+        "e)",
+        "f)",
+        "g)",
+        "h)"
+    ],
+    "correctAnswer": 4
+  },
+  {
+    "question": "A string of character(s) is called a palindrome if it reads the same forwards and backwards. Here the input string consists of only the uppercase Roman alphabet. As an example, the string 'MADAM' is a palindrome as it remains the same when written backwards (right to left). The procedure isPalindrome receives a string str as a parameter and outputs whether the string str is a palindrome or not. The procedure should use the minimum number of iterations for any number of characters in the string. Note that division is performed for data type integer, that is, a ÷ b is the quotient of a divided by b.",
+    "image1": "/2024S-FE-B-12.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)",
+        "e)"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "The function are_brackets_balanced checks for balanced brackets. It parses the given array of characters and when an opening bracket (“(”, “[”, “{”) is encountered, this is pushed onto the stack. When a closing bracket (“)”, “]”, “}”) is encountered, an element is popped from the stack and tested if it corresponds to the opening bracket. If the closing bracket matches its corresponding opening bracket, the process continues. Otherwise, it fails and the function returns false. After all characters have been processed, it returns false if any characters remain on the stack, otherwise it returns true. For simplicity, only brackets are considered as arguments to the function. The table shows examples of arguments provided to are_brackets_balanced and the return values.",
+    "image1": "/2024S-FE-B-13-1.png",
+    "image2": "/2024S-FE-B-13-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)",
+        "e)",
+        "f)",
+        "g)",
+        "h)"
+    ],
+    "correctAnswer": 7
+  },
+  {
+    "question": "The function calcSim takes two vectors (arrays) as input, calculates their similarity, and returns a value that characterizes the similarity. A large similarity indicates that the vectors are similar, and a small similarity indicates that the vectors are dissimilar. For example, to quantify the similarity between two documents, you can create a vector of occurrences of some words for each of the two documents and input them into calcSim. When the function calcSim({2, 2, 1, 0, 4}, {3, 1, 1, 1, 2}) is called, the return value rounded to the first decimal place is ___",
+    "image1": "/2024S-FE-B-14.png",
+    "image2": "",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)",
+        "e)",
+        "f)",
+        "g)",
+        "h)",
+        "i)",
+        "j)"
+    ],
+    "correctAnswer": 8
+  },
+  {
+    "question": "N-grams are continuous sequences of words, symbols, or tokens in a document. N-grams of texts are extensively used in text mining and natural language processing tasks. An n-gram model is built by counting how often word sequences occur in corpus text and then estimating the probabilities. The figure shows an example of the unigrams, bigrams, and trigrams of the example sentence “ITPEC includes members from 6 countries.”",
+    "image1": "/2024S-FE-B-15-1.png",
+    "image2": "/2024S-FE-B-15-2.png",
+    "options": [
+        "a)", 
+        "b)", 
+        "c)", 
+        "d)",
+        "e)",
+        "f)",
+        "g)",
+        "h)",
+        "i)"
+    ],
+    "correctAnswer": 8
   }
 ]
